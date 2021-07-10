@@ -1,0 +1,82 @@
+body{
+  background-color: #040034;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+main {
+  display: block;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+iframe{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  opacity: 30%;
+}
+
+#background {
+  margin-top: -10px;
+  position: absolute;
+  height: 100%;
+  animation: 200s linear 0s infinite running layer-background;
+}
+#stars {
+  position: absolute;
+  height: 100%;
+  animation: 300s linear 0s infinite running layer-background;
+  opacity: 70%;
+}
+#farmountains {
+  position: absolute;
+  height: 100%;
+  animation: 150s linear 0s infinite running layer-far-mountain;
+}
+#nearmountains {
+  position: absolute;
+  height: 100%;
+  animation: 130s linear 0s infinite running layer-near-mountain;
+}
+#grass {
+  position: absolute;
+  height: 100%;
+  animation: 90s linear 0s infinite running layer-grass;
+}
+#trees {
+  position: absolute;
+  height: 100%;
+  animation: 50s linear 0s infinite running layer-trees;
+}
+#pillars {
+  position: absolute;
+  height: 100%;
+  animation: 20s linear 0s infinite running layer-pillars;
+}
+
+@keyframes layer-background{
+  from {margin-left: -350%;}
+  to {margin-left: 350%;}
+}
+@keyframes layer-far-mountain{
+  from {margin-left: -300%;}
+  to {margin-left: 250%;}
+}
+@keyframes layer-near-mountain{
+  from {margin-left: -400%;}
+  to {margin-left: 250%;}
+}
+@keyframes layer-trees{
+  from {margin-left: -355%;}
+  to {margin-left: 135%;}
+}
+@keyframes layer-grass{
+  from {margin-left: -255%;}
+  to {margin-left: 0%;}
+}
+@keyframes layer-pillars{
+  from {margin-left: -255%;}
+  to {margin-left: 0%;}
+}
